@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*, :after, :before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  color: inherit;
+  font: inherit;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+input:focus,
+a:focus,
+span:focus,
+div:focus,
+textarea:focus {
+  outline: none;
+}
+
+/* iPad Input Shadows */
+input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+html {
+  &.uk-offcanvas-page {
+    overflow: hidden;
+  }
+}
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: $background;
+}
+
+a {
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.app {
+  // overflow-y: auto;
+  & > div {
+    //overflow-x: hidden;
+  }
+}
+
+body {
+  overflow-y: scroll;
+}
+
