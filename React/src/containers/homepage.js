@@ -39,7 +39,7 @@ const Homepage = () => {
         <span>Count interval: </span>
         <span>{COUNT_INTERVAL}</span>
       </div>
-      <div className="container__content">
+      <div>
         <LineChartComponent />
         <RatesTable />
       </div>

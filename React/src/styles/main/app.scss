@@ -24,12 +24,6 @@ textarea:focus {
   outline: none;
 }
 
-/* iPad Input Shadows */
-input[type="text"], input[type="email"], input[type="search"], input[type="password"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
 html {
   &.uk-offcanvas-page {
     overflow: hidden;
@@ -50,13 +44,6 @@ a {
   text-decoration: none;
   &:hover{
     text-decoration: none;
-  }
-}
-
-.app {
-  // overflow-y: auto;
-  & > div {
-    //overflow-x: hidden;
   }
 }
 
