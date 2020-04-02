@@ -14,8 +14,6 @@ export const get = url => {
 };
 
 export const checkRequestResult = response => {
-  console.log('response', response);
-
   if (response.status === 200) {
     return response.data;
   }
