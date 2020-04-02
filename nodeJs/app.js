@@ -59,8 +59,8 @@ const walk = function (dir, search, regExcludes, done) {
 
 function readIgnoreFile() {
     return new Promise(function (resolve) {
+        let arrayIgnore = [];
         if (ignoreFilePath) {
-            let arrayIgnore = [];
             fs.readFile(ignoreFilePath, "utf8",
                 function (error, data) {
                     if (error) return resolve(arrayIgnore);
