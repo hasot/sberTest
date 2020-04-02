@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*, :after, :before {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  color: inherit;
+  font: inherit;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+input:focus,
+a:focus,
+span:focus,
+div:focus,
+textarea:focus {
+  outline: none; }
+
+html.uk-offcanvas-page {
+  overflow: hidden; }
+
+body, html {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background: #fff; }
+
+a {
+  text-decoration: none; }
+  a:hover {
+    text-decoration: none; }
+
+body {
+  overflow-y: scroll; }
+
+.container {
+  margin-top: 64px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 17px 50px 0 50px;
+  margin-bottom: 100px; }
+
+.component__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding-top: 50px; }
+
+.component__table table, .component__table th, .component__table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center; }
+

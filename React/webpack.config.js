@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const Dotenv = require("dotenv-webpack");
-const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = () => {
   return {
@@ -62,17 +61,9 @@ module.exports = () => {
         filename: "style.[contenthash].css"
       }),
       new Dotenv(),
-      new CopyWebpackPlugin([
-        {
-          from: "public",
-          to: "public/",
-          toType: "dir"
-        }
-      ])
     ],
-
     output: {
-      path: path.join(__dirname, "/dist"),
+      path: path.join(__dirname, "/build"),
       filename: "[name].[hash].js",
       publicPath: "/"
     },
